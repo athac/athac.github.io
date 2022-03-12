@@ -1,0 +1,467 @@
+
+
+
+
+/*--- EDIT HERE ---*/
+
+/*--- COLORS ---*/
+:root {
+  --background: #eee;
+  --content-background: #f4f4f4;
+  --text: #7b7b7b;
+  --link: #EDC69A;
+  --accent: #DE9D85;
+  --title: #77627B;
+  --borders: #dadada;
+  	
+  /*--- FONTS ---*/
+  --body-font: 'Karla';
+  --font-size: 15px
+}
+
+/*----- TOOLTIPS -----*/
+
+.tippy-tooltip.custom-theme {
+    background-color: var(--title);
+    color: var(--background);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:.2em;
+    font-size: 0.8em;
+    border-radius:5px;
+    border:1px solid var(--borders);
+    margin: 5px 0;
+}
+
+/*---- SCROLLBAR ----- */
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+    background-color: var(--content-background);
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: var(--content-background);
+    border-radius: 5px;}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    min-height: 35px;
+    min-width: 35px;
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: var(--body-font), sans-serif;
+    font-size: var(--font-size);
+    color: var(--text);
+    background-color: var(--background);
+    line-height: 160%;
+    letter-spacing: 0.2px;
+    word-wrap: break-word;
+}
+
+a {
+    color: var(--link);
+    text-decoration:none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:hover {
+    color: var(--accent);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+p {margin-top: 1.2em;}
+
+h2 {font-size:1.1em;letter-spacing:1px;color:var(--title);}
+
+small {font-size: 0.9em;}
+big {font-size: 1.1em;}
+b, bold, strong {color: var(--title);}
+
+blockquote {
+    padding: 0 0 0 1em;
+    border-left: 1px solid var(--borders);
+    margin: 1em 0 1em 1em;
+}
+
+li {list-style-type:circle;}
+li::marker {color:var(--accent);}
+
+
+
+/*---- SIDE LINKS ----*/
+
+#side-links {
+    position:fixed;
+    height:100vh;
+    width:60px;
+    background:var(--background);
+    border-right:1px solid var(--borders);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index:10000000000000000000001;
+}
+
+#side-links img {
+    position:fixed;
+    top:20px;
+    left:9px;
+    border-radius:100%;
+    width:35px;
+    height:35px;
+    padding:2px;
+    background:var(--title);
+    border:1px solid var(--borders);
+}
+
+#side-links nav {
+    transform:translateY(-50%);
+    margin-top:50vh;
+}
+
+#side-links nav i {
+    font-size:1.2em;
+    color:var(--background);
+    background:var(--accent);
+    padding:8px;
+    border-radius:30px;
+    margin:10px;
+    border:1px solid var(--borders);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#side-links nav i:hover {
+    color:var(--accent);
+    background:var(--background);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#side-links .nav-cr {
+    position:fixed;
+    bottom:10px;
+}
+
+.nav-cr i {
+    font-size:1.2em;
+    color:var(--background);
+    background:var(--title);
+    padding:8px;
+    border-radius:30px;
+    margin:10px;
+    border:1px solid var(--borders);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.nav-cr i:hover {
+    color:var(--title);
+    background:var(--background);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+/*----- CONTENT -----*/
+
+#content {
+    position:relative;
+    margin-left:75px;
+    margin-bottom:50px;
+    margin-top:50px;
+    padding-bottom:20px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    align-items:center
+}
+
+#info-wrap {
+    width:900px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    border-radius:5px;
+    background:var(--content-background);
+    border:1px solid var(--borders);
+}
+
+
+
+
+#info {
+    width:550px;
+    padding:20px;
+}
+
+#info-short {
+    width:250px;
+    padding:20px;
+}
+
+#info-med {
+    width:450px;
+    padding:20px;
+}
+
+#info-long {
+    width:100%;
+    padding:20px;
+}
+
+
+
+.top-wrap {
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    border-bottom:1px solid var(--borders);
+}
+
+.bottom-wrap {
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    border-bottom:1px solid var(--borders);
+}
+
+.box-inner {
+padding: 50px;
+max-height: 400px;
+overflow-y: scroll;
+width: 300px;
+}
+
+.div-school {
+    word-wrap: break-word;
+}
+
+.div-education {
+  display: flex; /* or flex */
+}
+
+
+
+/*---- STATS ---*/
+
+.stats {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-items:center;
+}
+ 
+.stats li {
+    width:45%;
+    list-style-type:none;
+    text-align:center;
+    padding:10px;
+}
+ 
+.stats i {
+    color:var(--title);
+    background:var(--background);
+    border:1px solid var(--borders);
+    padding:5px;
+    border-radius:100%;
+    font-size:1.2em;
+}
+ 
+.stats .features {
+    padding-top:5px;
+    color:var(--text);
+    font-weight:normal;
+    letter-spacing:.05em;
+}
+
+/*---- IMAGE ---*/
+
+#aboutimg {
+    width:250px;
+    height:250px;
+}
+
+#aboutimg img {
+    border-radius:5px;
+    width:250px;
+    height:250px;
+    object-fit:cover;
+}
+
+/*--- DESCRIPTION ---*/
+
+#abt-text {
+    text-align:left;
+    margin:1em;
+}
+
+#abt-education {
+    text-align:left;
+    margin:auto;
+}
+
+#abt-projects {
+    text-align:left;
+    margin:auto;
+}
+
+#abt-text a {
+    border-bottom:2px solid var(--borders);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+#abt-text a:hover {
+    border-bottom:2px solid var(--link);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+/*---- ELSEWHERE ----*/
+
+#blogs {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding:1em 1em 0 1em;
+}
+
+.blog-wrap {
+    margin:1em;
+}
+
+#blogs img {
+    display:flex;
+    justify-content:left;
+    align-items:flex-start;
+    background:var(--accent);
+}
+
+.blog-info {
+    display:inline-block;
+    vertical-align:top;
+}
+
+#blogs .blogtitle {
+    font-size:1.1em;
+    font-weight:bold;
+}
+
+#blogs .blogtitle a {
+    color:var(--title);
+}
+
+#blogs .blogtitle a:hover {
+    color:var(--accent);
+}
+
+#blogs .blogsub {
+    font-size:.9em;
+    margin-left:5px;
+}
+
+.socials {
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.socials i {
+    font-size:1.2em;
+    padding:8px;
+    margin:.5em;
+    border-radius:100%;
+    background:var(--link);
+    color:var(--content-background);
+    border:1px solid var(--borders);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.socials i:hover {
+    background:var(--content-background);
+    color:var(--accent);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+/*---- LIKES / DISLIKES ----*/
+
+#favs {
+    display:flex;
+    justify-content:flex-start;
+}
+
+.likes, .dislikes {
+    width:50%;
+}
+
+.likes li, .dislikes li {
+    list-style-type:none;
+    margin-bottom:.5em;
+}
+
+.likes i, .dislikes i {
+    color:var(--title);
+    padding:6px;
+    border-radius:100%;
+    font-size:1.3em;
+}
+
+.likes b, .dislikes b {
+    font-weight:normal;
+    display:inline-block;
+    vertical-align:top;
+    color:var(--text);
+    letter-spacing:1px;
+    margin-top:4px;
+}
+
+.like-text, .dislike-text {
+    padding:10px;
+}
+
+/*---- RESPONSIVENESS ----*/
+
+
+  
